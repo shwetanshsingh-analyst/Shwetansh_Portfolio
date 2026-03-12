@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Shwetansh Singh — Data Analyst Portfolio</title>
+<meta name="description" content="Shwetansh Singh - Data Analyst Portfolio. Python, SQL, Power BI, Machine Learning."/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="curRing"></div>
+
+<!-- CANVAS -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-wrap">
+    <div class="ld-name"><span>SHWETANSH</span></div>
+    <div class="ld-bar-wrap">
+      <div class="ld-bar"><div class="ld-fill"></div></div>
+      <div class="ld-pct" id="ldPct">0%</div>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#projects" onclick="closeMob()">Projects</a>
+  <a href="#skills" onclick="closeMob()">Skills</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">SS<span class="dot">◆</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><span class="live-clock" id="clock">09:48:00 Am</span></li>
+  </ul>
+  <a href="#contact" class="nav-hire">Hire Me →</a>
+  <div class="nav-ham" id="ham" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+
+<div id="smooth">
+
+<!-- ── HERO ─────────────────────────── -->
+<section id="hero">
+  <div class="hero-orb"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-status">
+    <span class="status-dot"></span>
+    Available for opportunities · Uttar Pradesh, New Delhi,gurgaon, Rajasthan India
+  </div>
+
+  <p class="hero-eyebrow">AI & Data Science · Portfolio 2026</p>
+
+  <h1 class="hero-h1">
+    <span class="line"><span>Transforming</span></span>
+    <span class="line"><span class="stroked">Data</span> <span class="accent">Into</span></span>
+    <span class="line"><span class="stroked">Intelligent</span></span>
+    <span class="line"><span>Decisions</span></span>
+  </h1>
+
+  <div class="hero-bottom">
+    <p class="hb-desc">
+      Hi, I'm <strong style="color:var(--cream);font-weight:500;">Shwetansh Singh</strong> — a Data Analyst who transforms complex datasets into clear business intelligence using Python, SQL, Advanced Excel &amp; Machine Learning. I build solutions that actually matter.
+    </p>
+    <div class="hb-right">
+      <a href="#projects" class="hero-cta">View My Work →</a>
+      <span class="hero-scroll-hint"><span class="scroll-line"></span>Scroll to explore</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-cell" data-sr="1">
+    <div class="sc-num" data-count="">0</div>
+    <div class="sc-label">Years of Experience</div>
+  </div>
+  <div class="stat-cell" data-sr="2">
+    <div class="sc-num" data-count="3">0</div>
+    <div class="sc-label">Projects Delivered</div>
+  </div>
+  <div class="stat-cell" data-sr="3">
+    <div class="sc-num" data-count="4">0</div>
+    <div class="sc-label">Tools Mastered</div>
+  </div>
+  <div class="stat-cell" data-sr="4">
+    <div class="sc-num" data-count="100">0</div>
+    <div class="sc-label">% Data-Driven</div>
+  </div>
+</div>
+
+<!-- TICKER 1 -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="t-item"><span class="dia">◆</span>Data Analysis</div>
+    <div class="t-item"><span class="dia">◆</span>Python</div>
+    <div class="t-item"><span class="dia">◆</span>SQL</div>
+    <div class="t-item"><span class="dia">◆</span>Machine Learning</div>
+    <div class="t-item"><span class="dia">◆</span>Advanced Excel</div>
+    <div class="t-item"><span class="dia">◆</span>Power BI</div>
+    <div class="t-item"><span class="dia">◆</span>Scikit-learn</div>
+    <div class="t-item"><span class="dia">◆</span>Pandas · NumPy</div>
+    <div class="t-item"><span class="dia">◆</span>Statistical Modeling</div>
+    <div class="t-item"><span class="dia">◆</span>Data Visualization</div>
+    <!-- dup -->
+    <div class="t-item"><span class="dia">◆</span>Data Analysis</div>
+    <div class="t-item"><span class="dia">◆</span>Python</div>
+    <div class="t-item"><span class="dia">◆</span>SQL</div>
+    <div class="t-item"><span class="dia">◆</span>Machine Learning</div>
+    <div class="t-item"><span class="dia">◆</span>Advanced Excel</div>
+    <div class="t-item"><span class="dia">◆</span>Power BI</div>
+    <div class="t-item"><span class="dia">◆</span>Scikit-learn</div>
+    <div class="t-item"><span class="dia">◆</span>Pandas · NumPy</div>
+    <div class="t-item"><span class="dia">◆</span>Statistical Modeling</div>
+    <div class="t-item"><span class="dia">◆</span>Data Visualization</div>
+  </div>
+</div>
+
+<!-- ── ABOUT ─────────────────────────── -->
+<section id="about" class="section-wrap">
+  <div class="sec-eyebrow" data-sr>Who I Am</div>
+  <div class="about-grid">
+    <div class="about-visual" data-sr="1">
+      <div class="about-img-box">
+        <div class="about-img-inner"> Welcome Shwetansh's Portfolio</div>
+      </div>
+      <div class="about-badge">
+        <span class="ab-num"></span>
+        <span class="ab-txt">Years<br>Experience</span>
+      </div>
+    </div>
+    <div class="about-content" data-sr="2">
+      <h2 class="sec-heading">Crafting <em>insight</em><br>from complexity.</h2>
+      <p class="about-lead">
+        "I don't just analyse data — I translate it into decisions that drive real outcomes."
+      </p>
+      <p class="about-body">
+        I'm Shwetansh Singh, a Data Analyst based in New Delhi with hands-on experience across the full analytics pipeline — from raw data wrangling and SQL querying to building predictive ML models and presenting findings to stakeholders. My toolkit combines rigorous quantitative skills with a strong instinct for storytelling through data.
+      </p>
+      <p class="about-body">
+        Whether it's automating payroll systems, building churn prediction models, or creating executive dashboards in Power BI, I bring precision, curiosity, and a relentless focus on impact to every project.
+      </p>
+      <div class="about-pills">
+        <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Advanced Excel</span>
+        <span class="pill">Machine Learning</span><span class="pill">Power BI</span><span class="pill">Pandas</span>
+        <span class="pill">Scikit-learn</span><span class="pill">NumPy</span><span class="pill">Matplotlib</span>
+      </div>
+      <div class="about-cta-row">
+        <a href="#contact" class="btn-gold">Get in Touch →</a>
+        <a href="#projects" class="btn-ghost">View Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER 2 -->
+<div class="ticker" style="border-top:1px solid var(--border);">
+  <div class="ticker-track rev">
+    <div class="t-item"><span class="dia">◆</span>Payroll Systems</div>
+    <div class="t-item"><span class="dia">◆</span>Churn Prediction</div>
+    <div class="t-item"><span class="dia">◆</span>Sales Analytics</div>
+    <div class="t-item"><span class="dia">◆</span>HR Analytics</div>
+    <div class="t-item"><span class="dia">◆</span>Forecasting Models</div>
+    <div class="t-item"><span class="dia">◆</span>Customer Segmentation</div>
+    <div class="t-item"><span class="dia">◆</span>KPI Dashboards</div>
+    <div class="t-item"><span class="dia">◆</span>Data Pipelines</div>
+    <div class="t-item"><span class="dia">◆</span>Payroll Systems</div>
+    <div class="t-item"><span class="dia">◆</span>Churn Prediction</div>
+    <div class="t-item"><span class="dia">◆</span>Sales Analytics</div>
+    <div class="t-item"><span class="dia">◆</span>HR Analytics</div>
+    <div class="t-item"><span class="dia">◆</span>Forecasting Models</div>
+    <div class="t-item"><span class="dia">◆</span>Customer Segmentation</div>
+    <div class="t-item"><span class="dia">◆</span>KPI Dashboards</div>
+    <div class="t-item"><span class="dia">◆</span>Data Pipelines</div>
+  </div>
+</div>
+
+<!-- ── PROJECTS ─────────────────────────── -->
+<section id="projects" class="section-wrap">
+  <div class="sec-eyebrow" data-sr>Selected Work</div>
+  <h2 class="sec-heading" data-sr="1">Projects that <em>delivered</em><br>real outcomes.</h2>
+  <div class="proj-list">
+    <div class="proj-item" data-sr="1">
+      <div class="proj-num">01</div>
+      <div class="proj-info">
+        <div class="proj-cats">
+          <span class="proj-cat">Python</span>
+          <span class="proj-cat">MYSQL</span>
+          <span class="proj-cat">OOP</span>
+        </div>
+        <div class="proj-title">Employee Payroll Management System</div>
+        <p class="proj-desc">End-to-end automated payroll solution eliminating manual salary calculations — tracks attendance, computes deductions &amp; allowances, and generates digital payslips with full audit trails.</p>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+    <div class="proj-item" data-sr="2">
+      <div class="proj-num">02</div>
+      <div class="proj-info">
+        <div class="proj-cats">
+           <span class="proj-cat">Time-series visualization</span>
+          <span class="proj-cat">Pandas</span>
+          <span class="proj-cat">Matplotlib</span>
+          <span class="proj-cat">Excel</span>
+        </div>
+        <div class="proj-title">Weather Data Analysis & Forecasting</div>
+        <p class="proj-desc">Analyze historical weather data to predict temperature trends using time-series plots.</p>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+    <div class="proj-item" data-sr="3">
+      <div class="proj-num">03</div>
+      <div class="proj-info">
+        <div class="proj-cats">
+          <span class="proj-cat">Advance SQL</span>
+          <span class="proj-cat">Power BI</span>
+        </div>
+        <div class="proj-title">Hotel Booking Analysis</div>
+        <p class="proj-desc">End-to-end data analysis leveraging SQL and dynamic Power BI visualizations to optimize revenue performance and booking behavior insights.
+Delivered strategic recommendations to enhance profitability and business growth.</p>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+    <div class="proj-item" data-sr="4">
+      <div class="proj-num">04</div>
+      <div class="proj-info">
+        <div class="proj-cats">
+          <span class="proj-cat">Generative AI (Upcoming)</span>
+        </div>
+        <div class="proj-title">Finance</div>
+        <p class="proj-desc">Developed AI-powered solutions leveraging large language models to automate content generation and enhance user interaction.
+Focused on intelligent automation, prompt engineering, and scalable AI integration..</p>
+      </div>
+      <a href="#" class="proj-link">↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ─────────────────────────── -->
+<section id="skills" class="section-wrap">
+  <div class="sec-eyebrow" data-sr>Technical Arsenal</div>
+  <div class="skills-layout">
+    <div class="skills-left" data-sr="1">
+      <h2 class="sec-heading">Precision<br>tools for<br><em>every</em> layer.</h2>
+      <p class="skills-body">From data collection and wrangling, through analysis and modelling, to communication and visualisation — I operate confidently across the entire analytics stack.</p>
+      <div class="skill-radar">
+        <div class="radar-ring" style="width:220px;height:220px;"></div>
+        <div class="radar-ring" style="width:160px;height:160px;"></div>
+        <div class="radar-ring" style="width:100px;height:100px;"></div>
+        <div class="radar-fill" style="width:180px;height:180px;"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+          <div style="font-family:var(--F-display);font-size:2.5rem;color:var(--gold);line-height:1;">3</div>
+          <div style="font-family:var(--F-mono);font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Domains</div>
+        </div>
+      </div>
+    </div>
+    <div class="skills-right" data-sr="2">
+      <div class="skill-group">
+        <div class="sg-title">Languages &amp; Query</div>
+        <div class="sk-item"><span class="sk-name">Python</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">75%</span></div>
+        <div class="sk-item"><span class="sk-name">SQL</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><span class="sk-pct">70%</span></div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-title">Data &amp; Analysis</div>
+        <div class="sk-item"><span class="sk-name">Advanced Excel</span><div class="sk-track"><div class="sk-fill" data-w="95"></div></div><span class="sk-pct">85%</span></div>
+        <div class="sk-item"><span class="sk-name">Deep Learning / NLP</span><div class="sk-track"><div class="sk-fill" data-w="82"></div></div><span class="sk-pct">60%</span></div>
+        <div class="sk-item"><span class="sk-name">Statistical Analysis</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">50%</span></div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-title">ML &amp; Visualisation</div>
+        <div class="sk-item"><span class="sk-name">Machine Learning</span><div class="sk-track"><div class="sk-fill" data-w="75"></div></div><span class="sk-pct">70%</span></div>
+        <div class="sk-item"><span class="sk-name">Power BI</span><div class="sk-track"><div class="sk-fill" data-w="82"></div></div><span class="sk-pct">80%</span></div>
+        <div class="sk-item"><span class="sk-name">Data Visualisation</span><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><span class="sk-pct">75%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────── -->
+<section id="contact" class="section-wrap">
+  <div class="sec-eyebrow" data-sr>Let's Collaborate</div>
+  <div class="contact-grid">
+    <div class="contact-left" data-sr="1">
+      <div class="contact-big">
+        LET'S<br>BUILD<br><span class="go">TOGETHER.</span>
+      </div>
+      <p class="contact-tagline">
+        Open to data analyst roles, freelance projects, and impactful collaborations. Let's turn your data challenges into competitive advantage.
+      </p>
+      <div class="contact-items">
+        <div class="ci">
+          <div class="ci-left">
+            <span class="ci-lbl">Phone</span>
+            <span class="ci-val"><a href="tel:+918470975921">+91 - 8470975921</a></span>
+          </div>
+          <span class="ci-arrow">↗</span>
+        </div>
+        <div class="ci">
+          <div class="ci-left">
+            <span class="ci-lbl">Email</span>
+            <span class="ci-val"><a href="mailto:shwetanshsingh563@gmail.com">shwetanshsingh563@gmail.com</a></span>
+          </div>
+          <span class="ci-arrow">↗</span>
+        </div>
+        <div class="ci">
+          <div class="ci-left">
+            <span class="ci-lbl">LinkedIn</span>
+            <span class="ci-val"><a href="https://linkedin.com/in/analystshwetansh" target="_blank">analystshwetansh</a></span>
+          </div>
+          <span class="ci-arrow">↗</span>
+        </div>
+        <div class="ci">
+          <div class="ci-left">
+            <span class="ci-lbl">GitHub</span>
+            <span class="ci-val"><a href="https://github.com/shwetanshsingh563-tech" target="_blank">shwetanshsingh563</a></span>
+          </div>
+          <span class="ci-arrow">↗</span>
+        </div>
+        <div class="ci">
+          <div class="ci-left">
+            <span class="ci-lbl">Location</span>
+            <span class="ci-val">New Delhi, India 🇮🇳</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-sr="2">
+      <div class="contact-form">
+        <div class="cf-field">
+          <label class="cf-label">Your Name</label>
+          <input class="cf-input" placeholder="Jane Smith" type="text"/>
+          <div class="cf-underline"></div>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Email Address</label>
+          <input class="cf-input" placeholder="jane@company.com" type="email"/>
+          <div class="cf-underline"></div>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Subject</label>
+          <input class="cf-input" placeholder="Project Collaboration / Job Opportunity" type="text"/>
+          <div class="cf-underline"></div>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Message</label>
+          <textarea class="cf-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
+          <div class="cf-underline"></div>
+        </div>
+        <button class="cf-submit">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">SS<em>◆</em></div>
+  <div class="foot-copy">© 2026 Shwetansh Singh · New Delhi, India · All rights reserved</div>
+  <div class="foot-links">
+    <a href="https://linkedin.com/in/analystshwetansh" target="_blank">LinkedIn</a>
+    <a href="https://github.com/shwetanshsingh563" target="_blank">GitHub</a>
+    <a href="https://instagram.com/shwetansh_the_coder" target="_blank">Instagram</a>
+  </div>
+</footer>
+
+</div><!-- /smooth -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
